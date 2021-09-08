@@ -1,4 +1,7 @@
-<div>{{race.date | date: "dd/MM/yy"}} : {{race.location | locationRace}}</div>
+<div>
+    {{race.date | date: "dd/MM/yy"}} : {{race.location | locationRace}}
+    <a routerLink="/update-race/{{race.id_race}}">Mettre à jour</a>
+</div>
 
 <ul>
     <li *ngFor="let p of race.ponies">

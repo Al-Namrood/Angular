@@ -16,7 +16,9 @@ const ROUTES: Routes = [
   {path:'', component: PoniesComponent},
   {path:'races', component: RacesComponent},
   {path:'add-pony', component: AddPonyComponent},
+  {path:'update-pony/:id', component: AddPonyComponent},
   {path:'add-race', component: AddRaceComponent},
+  {path:'update-race/:id', component: AddRaceComponent},
 ]
 
 @NgModule({

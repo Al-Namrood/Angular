@@ -13,7 +13,7 @@
     <label for="">Poney</label>
     <br/>
     <div *ngFor="let p of ponies; let i = index">
-        <input type="checkbox"  name="{{p.name}}" (change)="poniesChecked[i]">
+       {{p.name}} <input type="checkbox"  name="{{p.name}}" (change)="poniesChecked[i] = !poniesChecked[i]">
 
     </div>
 
